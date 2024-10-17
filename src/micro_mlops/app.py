@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from model import load_model
+from micro_mlops.model import load_model
 
 app = FastAPI()
 
