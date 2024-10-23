@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "2001:8000"
+      - "5500:8000"
     environment:
       - DATA_PATH=data/houses.csv
       - MODEL_PATH=models/regression.joblib
