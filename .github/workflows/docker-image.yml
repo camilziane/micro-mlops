@@ -39,7 +39,7 @@ jobs:
         password: ${{ secrets.VM_MICRO_MLOPS_PASSWORD }}
         port: 22
         script: |
-          cd camil.ziane
+          cd camil.ziane/micro-mlops
           git pull origin main
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_ACCESS_TOKEN }}
           docker pull ${{ secrets.DOCKER_USERNAME }}/my-fastapi-app:latest
