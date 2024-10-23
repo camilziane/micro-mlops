@@ -43,4 +43,5 @@ jobs:
           git pull origin main
           docker pull ${{ secrets.DOCKER_USERNAME }}/my-fastapi-app:latest
           docker compose pull
-          docker compose up -d 
+          docker compose down
+          docker compose up --build -d 
