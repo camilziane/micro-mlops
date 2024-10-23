@@ -41,7 +41,6 @@ jobs:
         script: |
           cd camil.ziane/micro-mlops
           git pull origin main
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_ACCESS_TOKEN }}
           docker pull ${{ secrets.DOCKER_USERNAME }}/my-fastapi-app:latest
           docker compose pull
           docker compose up -d 
